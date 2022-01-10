@@ -13,7 +13,7 @@ const VisitArrowIcon = () => {
                     <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
                 </filter>
             </defs>
-            <g fill="none" fill-rule="evenodd" transform="rotate(-45 -51.433 169.347)">
+            <g fill="none" fillRule="evenodd" transform="rotate(-45 -51.433 169.347)">
                 <use fill="#000" filter="url(#visit-arrow-a)" xlinkHref="#visit-arrow-b"/>
                 <use fill="#FFF" xlinkHref="#visit-arrow-b"/>
             </g>

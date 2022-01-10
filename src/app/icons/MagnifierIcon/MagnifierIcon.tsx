@@ -14,7 +14,7 @@ const MagnifierIcon = () => {
                     <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
                 </filter>
             </defs>
-            <g fill="none" fill-rule="evenodd" transform="translate(-24 -92)">
+            <g fill="none" fillRule="evenodd" transform="translate(-24 -92)">
                 <use fill="#000" filter="url(#magnifier-a)" xlinkHref="#magnifier-b"/>
                 <use fill="#FFF" xlinkHref="#magnifier-b"/>
             </g>
