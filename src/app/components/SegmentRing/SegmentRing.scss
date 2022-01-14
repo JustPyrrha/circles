@@ -1,0 +1,9 @@
+.SegmentRingContainer {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform: rotate(-180deg);
+  display: block;
+  margin: auto;
+  position: relative;
+}
