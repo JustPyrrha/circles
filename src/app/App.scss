@@ -31,3 +31,54 @@ body {
 .BackgroundRing > div {
   position: absolute;
 }
+
+
+.GridContainer {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50%;
+}
+
+.GridItem {
+  display: flex;
+  justify-content: center;
+}
+
+//.GridItem > .Icon {
+//  text-align: center;
+//  margin: 0 auto;
+//  display: inline-block;
+//}
+
+.GridItem:first-child:nth-last-child(1),
+.GridItem:first-child:nth-last-child(1) ~ div {
+  width: 100%;
+}
+
+.GridItem:first-child:nth-last-child(2),
+.GridItem:first-child:nth-last-child(2) ~ div {
+  width: 50%;
+}
+
+.GridItem:first-child:nth-last-child(3),
+.GridItem:first-child:nth-last-child(3) ~ div {
+  width: 33%;
+}
+
+.GridItem:first-child:nth-last-child(4),
+.GridItem:first-child:nth-last-child(4) ~ div {
+  width: 25%;
+}
+
+.GridItem:first-child:nth-last-child(5),
+.GridItem:first-child:nth-last-child(5) ~ div {
+  width: 20%;
+}
+
+.GridItem:first-child:nth-last-child(6),
+.GridItem:first-child:nth-last-child(6) ~ div {
+  width: 16%;
+}
