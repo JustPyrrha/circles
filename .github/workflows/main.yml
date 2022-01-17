@@ -16,8 +16,6 @@ jobs:
           node-version: '16'
           cache: 'yarn'
       - run: yarn install
-        env:
-          CI: 'false'
       - run: yarn build
       - id: get-sha
         shell: bash

@@ -67,6 +67,7 @@ const SegmentRing = (props: SegmentRingProps) => {
     useEffect(() => {
         const s = slice(props)
         setSlices(s)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [props.lit, props.unlit, props.broken])
 
     useEffect(() => {
@@ -82,7 +83,8 @@ const SegmentRing = (props: SegmentRingProps) => {
             }
             setPoints(p)
         }
-    }, [refs.length])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[refs.length])
 
     return (
         <div className={"SegmentRingContainer"}>
