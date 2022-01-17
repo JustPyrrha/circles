@@ -11,10 +11,10 @@ const CurvedText = (props: { text: string }) => {
             }}
         >
             <defs>
-                <circle id={"text-curve"} cx={256} cy={256} r={128}/>
+                <circle id={"text-curve"} cx={256} cy={256} r={110}/>
             </defs>
             <text style={{
-                fontSize: 25,
+                fontSize: 48,
                 textAlign: "center",
                 fill: "white",
                 fontFamily: "arial"
