@@ -11,7 +11,7 @@ const Arc = React.forwardRef<SVGGeometryElement, PropsWithChildren<any>>((props:
     <path
         d={props.data}
         fill={"none"}
-        stroke={`${props.type === "broken" ? "red" : props.type === "lit" ? "white" : "gray"}`}
+        stroke={`${props.type === "broken" ? "#CC3030" : props.type === "lit" ? "white" : "gray"}`}
         strokeWidth={0.09}
         strokeOpacity={`1`}
         key={props.data}
@@ -93,12 +93,12 @@ const SegmentRing = (props: SegmentRingProps) => {
                 {slices}
                 {
                     props.broken > 0 && points.map((it, i) => {
-                        const dist = 0.04
+                        const dist = 0.03
                         return (
                             <g>
-                                <circle cx={it.x} cy={it.y} r={0.08} fill={"red"} key={`circle-${i}`} />
-                                <path d={`M ${it.x + dist} ${it.y + dist} L ${it.x - dist} ${it.y - dist}`} fill={"none"} stroke={"white"} strokeWidth={0.02}/>
-                                <path d={`M ${it.x + dist} ${it.y - dist} L ${it.x - dist} ${it.y + dist}`} fill={"none"} stroke={"white"} strokeWidth={0.02}/>
+                                <circle cx={it.x} cy={it.y} r={0.08} fill={"#CC3030"} key={`circle-${i}`} />
+                                <path d={`M ${it.x + dist} ${it.y + dist} L ${it.x - dist} ${it.y - dist}`} fill={"none"} stroke={"white"} strokeWidth={0.01}/>
+                                <path d={`M ${it.x + dist} ${it.y - dist} L ${it.x - dist} ${it.y + dist}`} fill={"none"} stroke={"white"} strokeWidth={0.01}/>
                             </g>
                         )
                     })
